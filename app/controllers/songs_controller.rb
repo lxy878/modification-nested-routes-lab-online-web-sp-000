@@ -25,8 +25,8 @@ class SongsController < ApplicationController
   end
 
   def new
-    # raise params.inspect
     @song = Song.new(id: params[:artist_id])
+    binding.pry
   end
 
   def create
