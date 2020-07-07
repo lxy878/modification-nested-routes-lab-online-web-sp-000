@@ -26,7 +26,6 @@ class SongsController < ApplicationController
 
   def new
     @song = Song.new(artist_id: params[:artist_id])
-    binding.pry
   end
 
   def create
